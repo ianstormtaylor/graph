@@ -15,13 +15,12 @@
   ],
   "local": [
     "db-graphs",
-    "graph-screen",
-    "add-fixtures",
-    "home-screen"
+    "graph-menu",
+    "graph-modal",
+    "add-fixtures"
   ],
   "dependencies": {
     "ianstormtaylor/reset": "*",
-    "ianstormtaylor/router": "*",
     "typefaces/montserrat": "*"
   },
   "remotes": []
