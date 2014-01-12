@@ -66,14 +66,6 @@
   left: 50%;
 }
 
-.GraphModel-chart-axis {
-  position: absolute;
-  top: 0;
-  left: 1em;
-  bottom: 0;
-  right: 0;
-}
-
 /**
  * Form.
  */
