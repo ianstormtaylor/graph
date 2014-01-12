@@ -1,0 +1,7 @@
+{
+  "name": "reactive-on-inserted",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "component/inserted": "*"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "reactive-child",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "yields/carry": "0.0.1",
+    "component/type": "1.0.0"
+  }
+}

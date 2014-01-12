@@ -1,0 +1,8 @@
+{
+  "name": "render-chart",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "component/chart": "*",
+    "ianstormtaylor/map": "*"
+  }
+}

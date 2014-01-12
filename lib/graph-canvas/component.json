@@ -1,0 +1,17 @@
+{
+  "name": "graph-canvas",
+  "scripts": ["index.js"],
+  "styles": ["index.css"],
+  "templates": ["index.html"],
+  "local": [
+    "reactive-on-inserted",
+    "render-chart"
+  ],
+  "dependencies": {
+    "component/domify": "*",
+    "component/inserted": "*",
+    "component/reactive": "*",
+    "segmentio/view": "*",
+    "yields/ago": "*"
+  }
+}

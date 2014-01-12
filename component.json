@@ -1,0 +1,28 @@
+{
+  "name": "graph",
+  "private": true,
+  "description": "Graph anyting easily.",
+  "repository": "ianstormtaylor/graph",
+  "version": "0.0.0",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "index.css"
+  ],
+  "paths": [
+    "lib"
+  ],
+  "local": [
+    "db-graphs",
+    "graph-screen",
+    "add-fixtures",
+    "home-screen"
+  ],
+  "dependencies": {
+    "ianstormtaylor/reset": "*",
+    "ianstormtaylor/router": "*",
+    "typefaces/montserrat": "*"
+  },
+  "remotes": []
+}

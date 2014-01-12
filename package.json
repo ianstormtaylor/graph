@@ -1,0 +1,12 @@
+{
+  "name": "graph",
+  "private": true,
+  "description": "Graph anyting easily.",
+  "repository": "git://github.com/ianstormtaylor/graph.git",
+  "version": "0.0.0",
+  "dependencies": {
+    "component": "~0.19.3",
+    "cordova": "~3.3.1-0.1.2",
+    "myth": "~0.3.0"
+  }
+}

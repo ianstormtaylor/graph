@@ -1,0 +1,8 @@
+{
+  "name": "model-sqllite",
+  "scripts": [
+    "index.js",
+    "statics.js",
+    "protos.js"
+  ]
+}

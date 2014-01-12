@@ -1,0 +1,23 @@
+
+/**
+ * Home screen.
+ *
+ * .HomeScreen
+ *   .HomeScreen-header
+ *     .HomeScreen-title
+ *     .HomeScreen-add-button
+ *   .HomeScreen-body
+ *     .HomeScreen-graph-menu
+ */
+
+.HomeScreen {}
+
+.HomeScreen-header {
+  background-color: var(black);
+}
+
+.HomeScreen-title {}
+
+.HomeScreen-graph-menu > :first-child {
+  padding-top: 2.2em;
+}

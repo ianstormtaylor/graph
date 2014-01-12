@@ -1,0 +1,20 @@
+
+:root {
+  var-black: #232b2d;
+  var-dark-gray: #313b3d;
+
+  var-red: rgb(221, 115, 67);
+  var-yellow: rgb(246, 190, 67);
+  var-lime: rgb(189, 206, 55);
+  var-aqua: rgb(85, 184, 117);
+  var-blue: rgb(64, 126, 127);
+  var-violet: rgb(103, 78, 103);
+  var-magenta: rgb(160, 88, 105);
+}
+
+body {
+  font: 20px/1 'Montserrat', 'Helvetica', sans-serif;
+  color: white;
+  background-color: var(black);
+  -webkit-font-smoothing: antialiased;
+}

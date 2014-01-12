@@ -1,0 +1,42 @@
+
+/**
+ * Add data form.
+ *
+ * .AddDataForm
+ *   .AddDataForm-input
+ *   .AddDataForm-submit
+ */
+
+.AddDataForm {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  background-color: white;
+  color: color(var(dark-gray) lightness(50%));
+}
+
+.AddDataForm-input {
+  position: absolute;
+  top: 0;
+  right: 64px;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  border: none;
+  background: transparent;
+}
+
+.AddDataForm-input:focus {
+  outline: none;
+}
+
+.AddDataForm-input::-webkit-inner-spin-button,
+.AddDataForm-input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.AddDataForm-input::placeholder {
+  color: color(var(dark-gray) lightness(75%));
+}

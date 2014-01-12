@@ -1,0 +1,12 @@
+{
+  "name": "db-graphs",
+  "scripts": ["index.js"],
+  "local": [
+    "db"
+  ],
+  "dependencies": {
+    "component/type": "1.0.0",
+    "matthewmueller/uid": "0.0.1",
+    "yields/fmt": "0.0.2"
+  }
+}

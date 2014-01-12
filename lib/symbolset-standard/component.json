@@ -1,0 +1,12 @@
+{
+  "name": "symbolset-standard",
+  "styles": [
+    "ss-standard.css"
+  ],
+  "fonts": [
+    "ss-standard.eot",
+    "ss-standard.svg",
+    "ss-standard.ttf",
+    "ss-standard.woff"
+  ]
+}

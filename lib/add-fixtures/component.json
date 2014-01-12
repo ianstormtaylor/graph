@@ -1,0 +1,15 @@
+{
+  "name": "add-fixtures",
+  "scripts": ["index.js"],
+  "json": ["graphs.json"],
+  "local": [
+    "colors",
+    "db-graphs"
+  ],
+  "dependencies": {
+    "component/each": "*",
+    "component/object": "*",
+    "jb55/pickrand": "*",
+    "visionmedia/batch": "*"
+  }
+}

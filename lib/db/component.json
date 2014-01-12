@@ -1,0 +1,7 @@
+{
+  "name": "db",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "visionmedia/bytes.js": "0.2.1"
+  }
+}

@@ -1,0 +1,20 @@
+
+/**
+ * Button.
+ *
+ * .Button[.Button--left][.Button--right]
+ */
+
+.Button {
+  font-size: .8em;
+  padding: 1.6em;
+  cursor: pointer;
+}
+
+.Button--left {
+  float: left;
+}
+
+.Button--right {
+  float: right;
+}

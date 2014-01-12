@@ -1,0 +1,5 @@
+{
+  "name": "colors",
+  "scripts": ["index.js"],
+  "json": ["colors.json"]
+}

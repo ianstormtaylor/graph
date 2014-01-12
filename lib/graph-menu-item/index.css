@@ -1,0 +1,16 @@
+
+/**
+ * Graph menu item.
+ *
+ * .GraphMenuItem
+ *   .GraphMenuItem-name
+ */
+
+.GraphMenuItem {
+  padding: 1.5em;
+  cursor: pointer;
+}
+
+.GraphMenuItem-name {
+  color: white;
+}
