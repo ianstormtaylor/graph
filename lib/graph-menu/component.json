@@ -1,0 +1,18 @@
+{
+  "name": "graph-menu",
+  "scripts": [
+    "index.js",
+    "item.js"
+  ],
+  "styles": [
+    "index.css"
+  ],
+  "templates": [
+    "item.html"
+  ],
+  "dependencies": {
+    "harthur/color": "*",
+    "segmentio/menu": "*",
+    "segmentio/view": "*"
+  }
+}

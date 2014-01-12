@@ -20,6 +20,7 @@
     "add-fixtures"
   ],
   "dependencies": {
+    "component/each": "*",
     "ianstormtaylor/reset": "*",
     "typefaces/montserrat": "*"
   },

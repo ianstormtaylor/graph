@@ -12,7 +12,7 @@
   var-magenta: rgb(160, 88, 105);
 }
 
-body {
+html {
   font: 20px/1 'Montserrat', 'Helvetica', sans-serif;
   color: white;
   background-color: var(black);

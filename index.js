@@ -1,4 +1,5 @@
 
+var each = require('each');
 var fixtures = require('add-fixtures');
 var graphs = require('db-graphs');
 var GraphMenu = require('graph-menu');

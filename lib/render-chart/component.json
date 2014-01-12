@@ -1,8 +1,12 @@
 {
   "name": "render-chart",
   "scripts": ["index.js"],
+  "local": [
+    "create-svg-element"
+  ],
   "dependencies": {
-    "component/chart": "*",
-    "ianstormtaylor/map": "*"
+    "harthur/color": "*",
+    "ianstormtaylor/map": "*",
+    "ianstormtaylor/rickshaw": "*"
   }
 }

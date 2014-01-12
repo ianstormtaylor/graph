@@ -1,9 +1,0 @@
-{
-  "name": "add-data-form",
-  "scripts": ["index.js"],
-  "styles": ["index.css"],
-  "templates": ["index.html"],
-  "dependencies": {
-    "segmentio/view": "*"
-  }
-}

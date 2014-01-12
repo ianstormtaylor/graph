@@ -1,17 +1,20 @@
 {
-  "name": "graph-canvas",
+  "name": "graph-modal",
   "scripts": ["index.js"],
   "styles": ["index.css"],
   "templates": ["index.html"],
   "local": [
-    "reactive-on-inserted",
+    "button",
+    "reactive-child",
+    "reactive-on-insert",
     "render-chart"
   ],
   "dependencies": {
     "component/domify": "*",
     "component/inserted": "*",
     "component/reactive": "*",
-    "segmentio/view": "*",
-    "yields/ago": "*"
+    "component/relative-date": "*",
+    "ianstormtaylor/css": "*",
+    "harthur/color": "*"
   }
 }
