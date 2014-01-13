@@ -17,6 +17,7 @@
     "component/relative-date": "*",
     "component/value": "*",
     "ianstormtaylor/css": "*",
-    "harthur/color": "*"
+    "harthur/color": "*",
+    "stagas/select": "*"
   }
 }
