@@ -4,7 +4,7 @@
   "json": ["graphs.json"],
   "local": [
     "colors",
-    "db-graphs"
+    "graph-model"
   ],
   "dependencies": {
     "component/each": "*",

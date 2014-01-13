@@ -1,0 +1,10 @@
+{
+  "name": "model-sqlite",
+  "scripts": ["index.js"],
+  "local": [
+    "execute-sql"
+  ],
+  "dependencies": {
+    "component/collection": "*"
+  }
+}

@@ -14,13 +14,16 @@
     "lib"
   ],
   "local": [
-    "db-graphs",
+    "add-fixtures",
+    "db",
+    "execute-sql",
     "graph-menu",
     "graph-modal",
-    "add-fixtures"
+    "graph-model",
+    "split-callback"
   ],
   "dependencies": {
-    "component/each": "*",
+    "component/array-series": "*",
     "ianstormtaylor/reset": "*",
     "typefaces/montserrat": "*"
   },
