@@ -1,4 +1,8 @@
 
+/**
+ * Variables.
+ */
+
 :root {
   var-black: #232b2d;
   var-dark-gray: #313b3d;
@@ -12,9 +16,69 @@
   var-magenta: rgb(160, 88, 105);
 }
 
+/**
+ * Base styles.
+ */
+
 html {
   font: 20px/1 'Montserrat', 'Helvetica', sans-serif;
   color: white;
   background-color: var(black);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/**
+ * Header.
+ *
+ * .App-header
+ *   .App-title
+ *   .App-new-button
+ */
+
+.App-header {
+  height: 64px;
+}
+
+.App-title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  line-height: 64px;
+  text-align: center;
+}
+
+/**
+ * Menu.
+ *
+ * .App-menu
+ *   .App-menu li
+ */
+
+.App-menu > :nth-child(1) {
+  background-color: var(red);
+}
+
+.App-menu > :nth-child(2) {
+  background-color: var(yellow);
+}
+
+.App-menu > :nth-child(3) {
+  background-color: var(lime);
+}
+
+.App-menu > :nth-child(4) {
+  background-color: var(aqua);
+}
+
+.App-menu > :nth-child(5) {
+  background-color: var(blue);
+}
+
+.App-menu > :nth-child(6) {
+  background-color: var(violet);
+}
+
+.App-menu > :nth-child(7) {
+  background-color: var(magenta);
 }

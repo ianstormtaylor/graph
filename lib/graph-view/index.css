@@ -1,0 +1,159 @@
+
+/**
+ * Graph model.
+ *
+ * .Graph
+ *   .Graph-title
+ *   .Graph-timespan
+ *   .Graph-back-button
+ *   .Graph-actions-button
+ *   .Graph-chart
+ *   .Graph-form
+ *     .Graph-input
+ *     .Graph-submit
+ */
+
+.Graph {
+  position: relative;
+  width: 100%;
+  height: 8em;
+}
+
+.Graph-title,
+.Graph-timespan,
+.Graph-back-button,
+.Graph-actions-button,
+.Graph-chart,
+.Graph-form,
+.Graph-input,
+.Graph-submit {
+  position: absolute;
+}
+
+.Graph-chart {
+  top: 3em;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Graph-title {
+  width: 100%;
+}
+
+.Graph-timespan {
+  font-size: .6em;
+  color: rgba(255, 255, 255, .7);
+}
+
+.Graph-back-button,
+.Graph-actions-button {
+  top: 1em;
+}
+
+.Graph-back-button {
+  left: 0;
+}
+
+.Graph-actions-button {
+  right: 0;
+}
+
+.Graph-form {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  display: block;
+  overflow: hidden;
+  background-color: white;
+  color: color(var(dark-gray) lightness(50%));
+}
+
+.Graph-input {
+  top: 0;
+  right: 64px;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  border: none;
+  background: transparent;
+}
+
+.Graph-input:focus {
+  outline: none;
+}
+
+.Graph-input::-webkit-inner-spin-button,
+.Graph-input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.Graph-input::placeholder {
+  color: color(var(dark-gray) lightness(75%));
+}
+
+.Graph-submit {
+  top: .5em;
+  right: .5em;
+  padding: 1em;
+  background: var(dark-gray);
+  color: white;
+  border-radius: .3em;
+}
+
+/**
+ * Deselected state.
+ */
+
+.Graph:not(.selected) .Graph-title {
+  top: 3.5em;
+  left: 2em;
+}
+
+.Graph:not(.selected) .Graph-chart {
+  opacity: .3;
+}
+
+.Graph:not(.selected) .Graph-timespan,
+.Graph:not(.selected) .Graph-back-button,
+.Graph:not(.selected) .Graph-actions-button,
+.Graph:not(.selected) .Graph-form {
+  display: none;
+}
+
+/**
+ * Selected state.
+ */
+
+.Graph.selected {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1; /* modal */
+}
+
+.Graph.selected .Graph-title,
+.Graph.selected .Graph-timespan {
+  width: 100%;
+  text-align: center;
+}
+
+.Graph.selected .Graph-title {
+  top: 2em;
+}
+
+.Graph.selected .Graph-timespan {
+  top: 6em;
+}
+
+.Graph.selected .Graph-back-button,
+.Graph.selected .Graph-actions-button {
+  z-index: 1;
+}
+
+.Graph.selected .Graph-chart {
+  top: 8em;
+  bottom: 4em;
+}

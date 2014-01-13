@@ -7,8 +7,13 @@
   <link rel="stylesheet" href="build.css">
 </head>
 <body>
-  <menu class="App-menu" data-child="menu"></menu>
-  <a class="App-new-button Button ss-plus" on-click="new">New Graph...</a>
+  <div class="App">
+    <header class="App-header">
+      <h1 class="App-title">Graphs</h1>
+      <a class="App-new-button Button Button--right ss-plus" on-click="new"></a>
+    </header>
+    <menu class="App-menu" data-child="menu"></menu>
+  </div>
   <script src="build.js"></script>
 </body>
 </html>

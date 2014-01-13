@@ -11,6 +11,11 @@
   cursor: pointer;
 }
 
+.Button::before {
+  position: relative;
+  top: .15em;
+}
+
 .Button--left {
   float: left;
 }

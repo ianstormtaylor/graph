@@ -1,5 +1,5 @@
 {
-  "name": "graph-modal",
+  "name": "graph-view",
   "scripts": ["index.js"],
   "styles": ["index.css"],
   "templates": ["index.html"],

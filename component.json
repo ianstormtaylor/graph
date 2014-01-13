@@ -15,10 +15,8 @@
   ],
   "local": [
     "db",
-    "execute-sql",
-    "graph-menu",
-    "graph-modal",
     "graph-model",
+    "graph-view",
     "reactive-child",
     "split-callback"
   ],
@@ -26,6 +24,7 @@
     "component/array-series": "*",
     "component/reactive": "*",
     "ianstormtaylor/reset": "*",
+    "segmentio/menu": "*",
     "typefaces/montserrat": "*"
   },
   "remotes": []

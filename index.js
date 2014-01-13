@@ -2,11 +2,17 @@
 var child = require('reactive-child');
 var db = require('db');
 var Graph = require('graph-model');
-var GraphMenu = require('graph-menu');
-var GraphModal = require('graph-modal');
+var Item = require('graph-view');
+var menu = require('menu');
 var reactive = require('reactive');
 var series = require('array-series');
 var split = require('split-callback');
+
+/**
+ * Create a graph menu.
+ */
+
+var Menu = menu(Item);
 
 /**
  * Kick it all off.
@@ -40,7 +46,7 @@ function setup (fn) {
 function boot (fn) {
   Graph.all(function (err, collection) {
     if (err) return fn(err);
-    new App(collection, document.body);
+    new App(collection, document.body.querySelector('.App'));
     fn();
   });
 }
@@ -55,17 +61,27 @@ function boot (fn) {
 function App (graphs, el) {
   this.el = el;
   this.collection = graphs;
-  var menu = this.menu = new GraphMenu();
+  var menu = this.menu = new Menu();
 
-  menu.on('select', function (el, graph) {
-    var modal = new GraphModal(graph);
-    modal.show(el);
-  });
-
+  // TODO pass collection straight to menu constructor
   graphs.each(function (graph) {
     menu.add(graph);
+  });
+
+  menu.on('select', function (el, model, view) {
+    view.render();
   });
 
   reactive(this.el, {}, this)
     .use(child);
 }
+
+/**
+ * Create a new graph.
+ *
+ * @param {Event} e
+ */
+
+App.prototype.new = function (e) {
+  // TODO
+};
