@@ -5,7 +5,6 @@
   "templates": ["index.html"],
   "local": [
     "button",
-    "db-graphs",
     "reactive-child",
     "reactive-on-insert",
     "render-chart"

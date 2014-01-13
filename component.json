@@ -14,16 +14,17 @@
     "lib"
   ],
   "local": [
-    "add-fixtures",
     "db",
     "execute-sql",
     "graph-menu",
     "graph-modal",
     "graph-model",
+    "reactive-child",
     "split-callback"
   ],
   "dependencies": {
     "component/array-series": "*",
+    "component/reactive": "*",
     "ianstormtaylor/reset": "*",
     "typefaces/montserrat": "*"
   },

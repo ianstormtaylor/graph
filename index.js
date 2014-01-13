@@ -1,9 +1,10 @@
 
+var child = require('reactive-child');
 var db = require('db');
-var fixtures = require('add-fixtures');
 var Graph = require('graph-model');
 var GraphMenu = require('graph-menu');
 var GraphModal = require('graph-modal');
+var reactive = require('reactive');
 var series = require('array-series');
 var split = require('split-callback');
 
@@ -11,7 +12,7 @@ var split = require('split-callback');
  * Kick it all off.
  */
 
-series([setup, fixtures, graphs], function (err) {
+series([setup, boot], function (err, res) {
   if (err) throw err;
 });
 
@@ -31,23 +32,40 @@ function setup (fn) {
 }
 
 /**
- * Create the graph menu.
+ * Get all graphs an initialize the App.
  *
  * @param {Function} fn
  */
 
-function graphs (fn) {
-  var menu = new GraphMenu();
-  document.body.appendChild(menu.el);
+function boot (fn) {
+  Graph.all(function (err, collection) {
+    if (err) return fn(err);
+    new App(collection, document.body);
+    fn();
+  });
+}
+
+/**
+ * Initialize the `App` with `graphs` and `el`.
+ *
+ * @param {Collection} graphs
+ * @param {Element} el
+ */
+
+function App (graphs, el) {
+  this.el = el;
+  this.collection = graphs;
+  var menu = this.menu = new GraphMenu();
 
   menu.on('select', function (el, graph) {
     var modal = new GraphModal(graph);
     modal.show(el);
   });
 
-  Graph.all(function (err, collection) {
-    if (err) return fn(err);
-    collection.each(menu.add.bind(menu));
-    fn();
+  graphs.each(function (graph) {
+    menu.add(graph);
   });
+
+  reactive(this.el, {}, this)
+    .use(child);
 }
