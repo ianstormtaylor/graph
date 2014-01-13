@@ -6,6 +6,7 @@
   "local": [
     "button",
     "reactive-child",
+    "reactive-on-enter",
     "reactive-on-insert",
     "render-chart"
   ],

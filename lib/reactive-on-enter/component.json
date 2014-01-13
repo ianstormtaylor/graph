@@ -1,0 +1,7 @@
+{
+  "name": "reactive-on-enter",
+  "scripts": ["index.js"],
+  "dependencies": {
+    "yields/k": "*"
+  }
+}

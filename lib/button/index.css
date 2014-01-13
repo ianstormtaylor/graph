@@ -13,13 +13,5 @@
 
 .Button::before {
   position: relative;
-  top: .15em;
-}
-
-.Button--left {
-  float: left;
-}
-
-.Button--right {
-  float: right;
+  top: .15em; /* make icons line up nicely */
 }

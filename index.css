@@ -37,15 +37,21 @@ html {
  */
 
 .App-header {
-  height: 64px;
+  height: 80px;
 }
 
 .App-title {
   position: absolute;
-  top: 0;
   width: 100%;
+  top: 16px;
   line-height: 64px;
   text-align: center;
+}
+
+.App-new-button {
+  position: absolute;
+  right: 0;
+  top: 16px;
 }
 
 /**
@@ -55,30 +61,30 @@ html {
  *   .App-menu li
  */
 
-.App-menu > :nth-child(1) {
+.App-menu > :nth-child(7n+1) {
   background-color: var(red);
 }
 
-.App-menu > :nth-child(2) {
+.App-menu > :nth-child(7n+2) {
   background-color: var(yellow);
 }
 
-.App-menu > :nth-child(3) {
+.App-menu > :nth-child(7n+3) {
   background-color: var(lime);
 }
 
-.App-menu > :nth-child(4) {
+.App-menu > :nth-child(7n+4) {
   background-color: var(aqua);
 }
 
-.App-menu > :nth-child(5) {
+.App-menu > :nth-child(7n+5) {
   background-color: var(blue);
 }
 
-.App-menu > :nth-child(6) {
+.App-menu > :nth-child(7n+6) {
   background-color: var(violet);
 }
 
-.App-menu > :nth-child(7) {
+.App-menu > :nth-child(7n+7) {
   background-color: var(magenta);
 }

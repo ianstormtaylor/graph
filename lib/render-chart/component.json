@@ -5,8 +5,10 @@
     "create-svg-element"
   ],
   "dependencies": {
+    "component/clone": "*",
     "harthur/color": "*",
     "ianstormtaylor/map": "*",
-    "ianstormtaylor/rickshaw": "*"
+    "ianstormtaylor/rickshaw": "*",
+    "segmentio/isodate-traverse": "*"
   }
 }

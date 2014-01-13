@@ -3,7 +3,7 @@
  * Graph model.
  *
  * .Graph
- *   .Graph-title
+ *   .Graph-name
  *   .Graph-timespan
  *   .Graph-back-button
  *   .Graph-actions-button
@@ -19,7 +19,7 @@
   height: 8em;
 }
 
-.Graph-title,
+.Graph-name,
 .Graph-timespan,
 .Graph-back-button,
 .Graph-actions-button,
@@ -37,8 +37,13 @@
   left: 0;
 }
 
-.Graph-title {
-  width: 100%;
+.Graph-name {
+  white-space: nowrap;
+}
+
+.Graph-name:focus {
+  outline: 0;
+  border-bottom: 3px dashed rgba(0, 0, 0, .1);
 }
 
 .Graph-timespan {
@@ -106,7 +111,7 @@
  * Deselected state.
  */
 
-.Graph:not(.selected) .Graph-title {
+.Graph:not(.selected) .Graph-name {
   top: 3.5em;
   left: 2em;
 }
@@ -134,13 +139,13 @@
   z-index: 1; /* modal */
 }
 
-.Graph.selected .Graph-title,
+.Graph.selected .Graph-name,
 .Graph.selected .Graph-timespan {
   width: 100%;
   text-align: center;
 }
 
-.Graph.selected .Graph-title {
+.Graph.selected .Graph-name {
   top: 2em;
 }
 

@@ -1,24 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.TODO" version="0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.ianstormtaylor.TODO" version="0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
   <name>TODO</name>
   <description>TODO</description>
   <author href="http://ianstormtaylor.com">Ian Storm Taylor</author>
   <feature name="http://api.phonegap.com/1.0/device" />
-  <preference name="permissions" value="none" />
-  <preference name="orientation" value="default" />
-  <preference name="target-device" value="universal" />
+  <gap:platform name="ios" />
+
+  <!-- Makes the web view fullscreen. -->
   <preference name="fullscreen" value="true" />
-  <preference name="webviewbounce" value="true" />
+  <!-- Sets the app's background color. -->
+  <preference name="backgroundcolor" value="0xFFF0" />
+  <!-- The app icon is finished as-is. -->
   <preference name="prerendered-icon" value="true" />
-  <preference name="stay-in-webview" value="false" />
-  <preference name="ios-statusbarstyle" value="black-opaque" />
-  <preference name="detect-data-types" value="true" />
-  <preference name="exit-on-suspend" value="false" />
-  <preference name="show-splash-screen-spinner" value="true" />
-  <preference name="auto-hide-splash-screen" value="true" />
-  <preference name="disable-cursor" value="false" />
-  <preference name="android-minSdkVersion" value="7" />
-  <preference name="android-installLocation" value="auto" />
+  <!-- iOS: Hide the toolbar that makes switching between inputs easier. -->
+  <preference name="hidekeyboardformaccessorybar" value="true" />
+  <!-- iOS: Allow calling focus() on an element to open the keyboard. -->
+  <preference name="keyboarddisplayrequiresuseraction" value="false" />
+  <!-- iOS: Target both phones and tablets. -->
+  <preference name="target-device" value="universal" />
+  <!-- iOS: Set the status bar style. -->
+  <!-- <preference name="ios-statusbarstyle" value="black-opaque" /> -->
+  <!-- iOS: Detect phone numbers and address in text. -->
+  <preference name="detect-data-types" value="false" />
+
   <icon src="icon.png" />
   <icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
   <icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
@@ -28,5 +32,6 @@
   <gap:splash gap:platform="ios" height="960" src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
   <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
   <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
+
   <access origin="http://127.0.0.1*" />
 </widget>

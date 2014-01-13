@@ -1,4 +1,5 @@
 
+var fixtures = require('add-fixtures');
 var child = require('reactive-child');
 var db = require('db');
 var Graph = require('graph-model');
@@ -72,6 +73,10 @@ function App (graphs, el) {
     view.render();
   });
 
+  menu.on('add', function (el, model, view) {
+    view.edit();
+  });
+
   reactive(this.el, {}, this)
     .use(child);
 }
@@ -83,5 +88,13 @@ function App (graphs, el) {
  */
 
 App.prototype.new = function (e) {
-  // TODO
+  var col = this.collection;
+  var menu = this.menu;
+  var model = new Graph();
+
+  model.save(function (err) {
+    if (err) throw err;
+    col.push(model);
+    menu.add(model);
+  });
 };
